@@ -23,14 +23,14 @@ List<String> nameList2 = new ArrayList<String>(Arrays.asList("이름7","이름8"
 request.setAttribute("name4", nameList);
 %>
 
-<%-- <c:forEach var="name" items="이름1, 이름2, 이름3">
+<c:forEach var="name" items="이름1, 이름2, 이름3">
 ${name } <br />
-</c:forEach> --%>
-
-<%-- <c:forEach var="name" items="${name3 }">
+</c:forEach> 
+<hr />
+<c:forEach var="name" items="${name3 }">
 ${name } <br />
-</c:forEach> --%>
-
+</c:forEach>
+<hr />
 <%-- <c:forEach var="name" items="${name3 }" varStatus="st">
 <br /> ${st.count } : <c:out value="${name }" />
 </c:forEach> --%>
